@@ -1,0 +1,67 @@
+{
+  "name": "@wonderwhy-er/desktop-commander",
+  "version": "0.1.19",
+  "description": "MCP server for terminal operations and file editing",
+  "license": "MIT",
+  "author": "Eduards Ruzga",
+  "homepage": "https://github.com/wonderwhy-er/ClaudeComputerCommander",
+  "bugs": "https://github.com/wonderwhy-er/ClaudeComputerCommander/issues",
+  "type": "module",
+  "bin": {
+    "desktop-commander": "dist/index.js",
+    "setup": "dist/setup-claude-server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "sync-version": "node scripts/sync-version.js",
+    "bump": "node scripts/sync-version.js --bump",
+    "bump:minor": "node scripts/sync-version.js --bump --minor",
+    "bump:major": "node scripts/sync-version.js --bump --major",
+    "build": "tsc && shx cp setup-claude-server.js dist/ && shx chmod +x dist/*.js",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "setup": "npm install && npm run build && node setup-claude-server.js",
+    "prepare": "npm run build",
+    "test": "node test/test.js",
+    "test:watch": "nodemon test/test.js",
+    "link:local": "npm run build && npm link",
+    "unlink:local": "npm unlink",
+    "inspector": "npx @modelcontextprotocol/inspector dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "terminal",
+    "claude",
+    "ai",
+    "command-line",
+    "process-management",
+    "file-editing",
+    "code-editing",
+    "diff",
+    "patch",
+    "block-editing",
+    "file-system",
+    "text-manipulation",
+    "code-modification",
+    "surgical-edits",
+    "file-operations"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "glob": "^10.3.10",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "nodemon": "^3.0.2",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  }
+}
