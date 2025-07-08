@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/strawhatai-claude-dev-tools-badge.png)](https://mseep.ai/app/strawhatai-claude-dev-tools)
+
 # Claude Desktop Commander MCP
 
 [![npm downloads](https://img.shields.io/npm/dw/@wonderwhy-er/desktop-commander)](https://www.npmjs.com/package/@wonderwhy-er/desktop-commander)
