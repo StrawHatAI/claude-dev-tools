@@ -2,6 +2,7 @@
 
 [![npm downloads](https://img.shields.io/npm/dw/@wonderwhy-er/desktop-commander)](https://www.npmjs.com/package/@wonderwhy-er/desktop-commander)
 [![smithery badge](https://smithery.ai/badge/@wonderwhy-er/desktop-commander)](https://smithery.ai/server/@wonderwhy-er/desktop-commander)
+[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/d95e8592-4114-4957-b0ef-289c5460ab31)
 
 Short version. Two key things. Terminal commands and diff based file editing.
 
